@@ -49,9 +49,9 @@
    bfm_init     = 0
    bfm_rstctl   = .FALSE.
    bio_setup    = 3
-   out_fname    = 'BFM_standalone'
+   out_fname    = 'BFM_tayabas'
    out_dir      = '.'
-   out_title    = 'BFM_STANDALONE'
+   out_title    = 'BFM_TAYABAS'
    in_rst_fname = 'in_bfm_restart'
    out_delta    = 300  !every 30 days
    parallel_log = .FALSE.
