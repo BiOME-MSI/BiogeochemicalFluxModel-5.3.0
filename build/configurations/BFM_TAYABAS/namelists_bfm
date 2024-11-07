@@ -288,8 +288,8 @@ AssignAirPelFluxesInBFMFlag = .TRUE.
     CalcBioAlk      =  .FALSE.
     p_kdca          =  10.9
     p_nomega        =  1
-    AtmCO2_N        =  1         'CMIP6_Historical_GHG_1765_2014.dat'  .FALSE.  'CO2'     '1765-01-01 00:00'  'yearly'  .TRUE.
-    AtmSLP_N        =  0         'AtmSLP.nc'                           .TRUE.   'AtmSLP'  '1764-07-01 00:00'  'dummy'   .TRUE.
+    AtmCO2_N        =  0         'atmCO2-SLP.grib'  .FALSE.  'carbon_dioxide'           '2020-01-01 00:00'  'monthly'  .TRUE.
+    AtmSLP_N        =  0         'atmCO2-SLP.grib'  .FALSE.  'mean_sea_level_pressure'  '2020-01-01 00:00'  'monthly'   .TRUE.
 	filename_nml_conf = 'Carbonate_Dynamics.nml',
 /
 
@@ -799,8 +799,8 @@ p_paMEZ(2,:)=   0.0,    1.0
   timefmt=      2,
   MaxN=         144,
   simdays=      5760,
-  start=        "2000-01-01 00:00:00",
-  stop=         "2010-01-01 00:00:00",
+  start=        "2020-01-01 00:00:00",
+  stop=         "2020-12-31 00:00:00",
 	filename_nml_conf = 'Standalone.nml',
 /
 
