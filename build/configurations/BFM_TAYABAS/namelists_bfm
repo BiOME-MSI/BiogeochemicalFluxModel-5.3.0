@@ -288,8 +288,8 @@ AssignAirPelFluxesInBFMFlag = .TRUE.
     CalcBioAlk      =  .FALSE.
     p_kdca          =  10.9
     p_nomega        =  1
-    AtmCO2_N        =  1         './FORCINGS/ATM_CO2.dat'   .FALSE.   'CO2'       '2020-01-01 00:00'  'monthly'   .TRUE.
-    AtmSLP_N        =  1         './FORCINGS/ATM_SLP.dat'   .FALSE.   'SLP-atm'   '2020-01-01 00:00'  'monthly'   .TRUE.
+    AtmCO2_N        =  1         './FORCINGS/ATM_CO2.dat'   .FALSE.   'CO2'       '2015-01-01 00:00'  'monthly'   .TRUE.
+    AtmSLP_N        =  1         './FORCINGS/ATM_SLP.dat'   .FALSE.   'SLP-atm'   '2015-01-01 00:00'  'monthly'   .TRUE.
 	filename_nml_conf = 'Carbonate_Dynamics.nml',
 /
 
@@ -799,7 +799,7 @@ p_paMEZ(2,:)=   0.0,    1.0
   timefmt=      2,
   MaxN=         144,
   simdays=      5760,
-  start=        "2020-01-01 00:00:00",
+  start=        "2015-01-01 00:00:00",
   stop=         "2020-12-01 00:00:00",
 	filename_nml_conf = 'Standalone.nml',
 /
