@@ -49,7 +49,7 @@
    bfm_init     = 0
    bfm_rstctl   = .FALSE.
    bio_setup    = 3
-   out_fname    = 'BFM_tayabas'
+   out_fname    = 'BFM_Tayabas'
    out_dir      = '.'
    out_title    = 'BFM_TAYABAS'
    in_rst_fname = 'in_bfm_restart'
@@ -283,13 +283,13 @@ AssignAirPelFluxesInBFMFlag = .TRUE.
 !                                3 = field from a coupled model (e.g. atmospheric SLP from OGCM)
 !-----------------------------------------------------------------------------------!
 &CSYS_parameters
-    AtmCO20         =  370.0E0
-    MaxIterPHsolver = 50
+    AtmCO20         =  412.0E0
+    MaxIterPHsolver =  50
     CalcBioAlk      =  .FALSE.
     p_kdca          =  10.9
     p_nomega        =  1
-    AtmCO2_N        =  0         'atmCO2-SLP.grib'  .FALSE.  'carbon_dioxide'           '2020-01-01 00:00'  'monthly'  .TRUE.
-    AtmSLP_N        =  0         'atmCO2-SLP.grib'  .FALSE.  'mean_sea_level_pressure'  '2020-01-01 00:00'  'monthly'   .TRUE.
+    AtmCO2_N        =  1         './FORCINGS/ATM_CO2.dat'   .FALSE.   'CO2'       '2020-01-01 00:00'  'monthly'   .TRUE.
+    AtmSLP_N        =  1         './FORCINGS/ATM_SLP.dat'   .FALSE.   'SLP-atm'   '2020-01-01 00:00'  'monthly'   .TRUE.
 	filename_nml_conf = 'Carbonate_Dynamics.nml',
 /
 
@@ -773,8 +773,8 @@ p_paMEZ(2,:)=   0.0,    1.0
 &standalone_nml
    nboxes      = 1,
    indepth     = 10.0,
-   latitude    = 45.0,
-   longitude   = 13.5,
+   latitude    = 121.7195,    !TAYABAS COORDINATES
+   longitude   = 13.5999,
    maxdelt     = 8640.0,
    mindelt     = 1.0,
    method      = 2,
@@ -800,7 +800,7 @@ p_paMEZ(2,:)=   0.0,    1.0
   MaxN=         144,
   simdays=      5760,
   start=        "2020-01-01 00:00:00",
-  stop=         "2020-12-31 00:00:00",
+  stop=         "2020-12-01 00:00:00",
 	filename_nml_conf = 'Standalone.nml',
 /
 
@@ -840,7 +840,7 @@ p_paMEZ(2,:)=   0.0,    1.0
 !
 !-------------------------------------------------------------------------!
 &forcings_nml
-   forcing_method    = 1,
+   forcing_method    = 2,
    ltype             = 1,
    lw                = 20.0,
    ls                = 300.0,
@@ -851,7 +851,7 @@ p_paMEZ(2,:)=   0.0,    1.0
    tde               = 1.0,
    ww                = 20.0,
    ws                = 10.0,
-   forcing_file      = '',
+   forcing_file      = './FORCINGS/envForcings.dat',
    use_external_data = .false.,
    data_file         = '',
    botdep_c          = 0.0,

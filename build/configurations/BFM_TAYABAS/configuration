@@ -29,8 +29,7 @@
         ARCH     = 'gfortran.inc',
         PROC     = 4,
         EXP      = 'tayabas',
-        EXPFILES = 'gebco_2024_n13.9875_s13.0741_w121.1478_e122.7118.nc atmCO2-SLP.grib cmems_obs-ins_glo_phy-temp-sal_nrt_oa_P1M_1730942450539.nc'
-        
+        DIRFILES  = 'FORCINGS'        
 /
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 #       CONFIGURATION VARIABLES
