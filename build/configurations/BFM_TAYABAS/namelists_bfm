@@ -283,7 +283,7 @@ AssignAirPelFluxesInBFMFlag = .TRUE.
 !                                3 = field from a coupled model (e.g. atmospheric SLP from OGCM)
 !-----------------------------------------------------------------------------------!
 &CSYS_parameters
-    AtmCO20         =  412.0E0
+    AtmCO20         =  399.4E0
     MaxIterPHsolver =  50
     CalcBioAlk      =  .FALSE.
     p_kdca          =  10.9
@@ -640,7 +640,7 @@ p_paMEZ(2,:)=   0.0,    1.0
 !                            detritus
 !-------------------------------------------------------------------------!
 &PAR_parameters
-  LightPeriodFlag    =  1
+  LightPeriodFlag    =  2
   LightLocationFlag  =  3
   ChlAttenFlag       =  1
   p_PAR        =  0.40
@@ -836,7 +836,7 @@ p_paMEZ(2,:)=   0.0,    1.0
 !botdep_n       real    Organic nitrogen deposition rate (mmol m^-2 d^-1)
 !botdep_p       real    Organic phosphorus deposition rate (mmol m^-2 d^-1)
 !botdep_si      real    Organic silicate deposition rate (mmol m^-2 d^-1)
-!botox_o       real    Pelagic oxygen ventilation rate (mmol m^-2 d^-1)
+!botox_o        real    Pelagic oxygen ventilation rate (mmol m^-2 d^-1)
 !
 !-------------------------------------------------------------------------!
 &forcings_nml
